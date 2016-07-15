@@ -1,0 +1,359 @@
+.header{
+	background: #fff;
+}
+.logo{
+	display: inline-block;	
+}
+.logo img{	
+	max-width: 252px;
+	width: 100%;
+}
+.menu li a{
+	font-size: 1em;
+	color: #352d2f;
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: #ff364c;
+}
+/* banner */
+
+.logo-html5{
+	float: right;
+}
+.informacoes-treinamento{
+	float: left;
+}
+.titulo-banner{
+   font-size: 3em;
+    line-height: 1.2em;	
+    text-transform: uppercase;
+    color: #FFF; 
+    font-weight: 100;
+}
+.preco{
+	font-size: 4.5em;
+    /* font-weight: bold; */
+    margin: .5em 0 .2em 0;
+    color: #FFF;
+    display: inherit;
+}
+.centavos {
+    font-size: .8em;
+}
+.formas-pagamento{
+	display: block;
+    font-size: 1.2em;
+    color: #FFF;
+}
+a.btn-banner-home{
+	margin-top: 1.6em;
+	margin-bottom: 0;
+}
+.banner-html5{
+	max-width: 403px;
+	width: 100%;
+}
+.btn-medium {
+    color: #FFF;
+    background: #04112C;
+    text-decoration: none;
+    padding: 1em 3em;
+    display: inline-block;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+.btn-medium:hover {
+    color: #04112C;
+    background: #fff;
+    border: 1px #04112C solid;
+}
+.btn-large{
+	background-color: #FF364C;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 2.4em;
+	text-decoration: none;
+	padding: .8em 1.8em;
+	margin: .5em 0;
+	display: inline-block;
+}
+.btn-large:hover{
+	background-color: #04112C;
+	border:1px #FFF solid;	
+}
+
+/* treinamentos */
+.box-cursos {
+    padding: 0 2em;
+    box-sizing: border-box;
+}
+.box-cursos span{
+	display: block;
+}
+.box-cursos p{
+	margin: 0;
+}
+/* treinamentos */
+
+/* quem somos */
+.quem-somos h2, .quem-somos p{
+	color: #fff;
+}
+/* quem somos */
+
+
+/*depoimentos*/
+.nota {
+    width: 91px;
+    height: 19px;
+    display: inline-block;
+    margin-bottom: .5em;
+    background-image: url(../images/notas.png);
+}
+.box-depoimento{
+    box-sizing: border-box;
+    padding: 0 1.6em;
+}
+/* depoimentos*/
+
+/* action agenda */
+.btn-action{
+	background-color: #fff;
+	color: #04112c;
+}
+.btn-action:hover{
+	border: none;
+}
+/* action agenda */
+
+/* endereco */ 
+.lista-endereco li p{
+	margin: .5em 0;
+}
+/* endereco */ 
+
+/* formulario de contato */
+.form-contato{}
+.box-fields{
+	margin-bottom: 1em;
+}
+
+.box-fields label{
+	color: #f00;
+}
+.box-textarea {
+    margin-bottom: 0;
+}
+.box-fields, .box-fields span{
+	display: block;
+}
+.box-fields span {
+    margin-bottom: .4em;
+    font-size: 1.2em;
+}
+.input-default {
+    border: 1px #04112c solid;
+    font-size: .8em;
+    padding: .8em 1em;
+    width: 100%;
+    margin-bottom: .6em;
+    box-sizing: border-box;
+    outline: none;
+}
+.input-default.error, .box-message.error{
+	border: 1px #f00 solid;
+	background-color: #fee5e5;
+
+}
+.box-message{
+	border: 1px #04112c solid;
+	width: 100%;
+	min-height: 100px;
+	box-sizing: border-box;
+	font-size: .8em;
+	padding: .8em 1em;
+	margin-bottom: .6em;
+}
+.btn-enviar{
+	width: 100%;
+	border: none;
+	font-size: 1em;
+}
+.btn-enviar:hover{
+	cursor: pointer;
+}
+.parceiros h3{
+	margin-bottom: 1em;
+}
+.img-parceiros {
+    max-width: 279px;
+    width: 100%;
+}
+
+.texto-rodape{
+    text-align: center;
+    font-size: 1em;
+    color: #999;
+    margin-top: 2em;
+}
+/* formulario de contato */
+
+
+
+/* SOMENTE MOBILE */
+@media (max-width: 480px) { 
+	.logo {		
+		text-align: left;
+	}
+	.logo img {
+		width: 75%;		
+	}
+
+	.btn-large {    
+    	padding: .8em 1em;
+    }
+
+    .banner-html5 {	 
+		width: 50%;
+	 
+	}
+}
+/* SOMENTE MOBILE */
+
+/* SOMENTE TABLET */
+@media (min-width: 481px) and (max-width: 1023px) {
+	.banner-html5 {	 
+		width: 30%;	 
+	}
+}
+/* SOMENTE TABLET */
+
+
+/* TABLET e MOBILE */
+@media (max-width: 1023px) { 
+	.menu li {
+	    text-align: center;
+	    background-color: #04112C;
+	    border-bottom: 1px #FFF solid;
+	} 
+	.menu li a {	 
+	    color: #FFF;
+	    display: block;
+	    padding: .8em;
+	    font-size: 1.2em;
+	}
+	.menu-drop{
+		display: block;
+	}
+	.box-menu{
+		display: none;
+	}
+	.banner-html5 {	 	
+	    margin: 0 auto 2.2em auto;
+	    display: inherit;
+	}	
+	.informacoes-treinamento {
+	    text-align: center;
+	}
+	.box-cursos {
+	    margin-bottom: 2em;
+	    border-bottom: 1px #ccc solid;
+	    padding-bottom: 2em;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+	.btn-medium {
+	    width: 100%;
+	    padding: 1.6em 0;
+	}
+}
+/* TABLET e MOBILE */
+
+/* TABLET e DESK */
+@media (min-width: 481px) {    
+}
+/* TABLET e DESK */
+
+/* SOMENTE DESK */
+@media (min-width: 1024px) {
+	.box-menu{
+		line-height: 4em;
+		display: block !important;
+	}	
+	.menu{
+		float: right;
+	}
+	.menu li{
+		float: left;
+	}
+	.menu li a{		
+		padding: 1em;
+	}
+	.menu-drop{
+		display: none;
+	}
+	.content-banner {
+	    max-width: 1000px;
+	    display: inherit;
+	    margin: 0 auto;
+	}
+	.banner-html5 { 
+	    float: right;	    
+	}
+}
+/* SOMENTE DESK */
+
+.logo-menu{
+	position: relative;
+}
+#nav-toggle{
+    position: absolute;
+    right: 0;
+    top: 47%;
+}
+#nav-toggle span, 
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  right: 0;
+  background: #04112C;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px; 
+}
+.banner{
+	background: #04112c;
+}
+.treinamentos{
+	background: #fff;
+}
+.quem-somos{
+	background: #04112c;
+}
+.depoimentos{
+	background: #fff;
+}
+.action{
+	background: #04112c;
+	color: #fff;
+}
+.endereco{
+	background: #fff;
+}
+.localizacao{
+	padding: 10em 0;
+	background-image: url(../images/imagem-mapa.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.rodape{}

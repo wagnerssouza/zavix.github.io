@@ -1,0 +1,46 @@
+<html>
+<head>
+	<style>#sucesso{display: none;}</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#ajax_form').validate({
+			rules: {
+				name: { required: true, minlength: 2 }				
+			},
+			messages: {
+				name: { required: 'Preencha o campo nome', minlength: 'No mínimo 2 letras' }				
+ 
+			},
+			submitHandler: function( form ){
+				var dados = $( form ).serialize();
+ 
+				$.ajax({
+					type: "POST",
+					url: "http://wagnersantos.com/zavix/form.php",
+					data: dados,
+					success: function( data )
+					{
+						alert( data );
+						$("#name").val('');
+						$("#sucesso").show();
+						
+					}
+				});
+ 
+				return false;
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+	<form method="post" action="" id="ajax_form">		
+		<label>Nome: <input type="text" name="name" value="" id="name" /></label>		
+ 
+		<label><input type="submit" name="enviar" value="Enviar" /></label>
+	</form>
+	<p id="sucesso">Enviado com sucesso</p>
+</body>
+</html>
